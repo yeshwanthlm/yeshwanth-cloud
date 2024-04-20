@@ -1,0 +1,38 @@
+---
+Title: Public Speaking
+type: list
+---
+
+Different talks/presentations I have given at Conferences
+
+## 2024:
+
+- [Beyond IEEE Students](https://www.linkedin.com/posts/yeshwanth-l-m_grateful-for-the-opportunity-to-engage-with-activity-7179824329327587328-PlHO?utm_source=share&utm_medium=member_desktop)
+- [Volunteer Training Program](https://www.linkedin.com/posts/yeshwanth-l-m_ieee-volunteertraining-techcommunity-activity-7144334032569262080-stK-?utm_source=share&utm_medium=member_desktop)
+
+## 2023:
+- [Panel Discussion: Exploring the Evolution of AI and ML: Bridging Theory to Real-world Applications.](https://www.linkedin.com/posts/yeshwanth-l-m_ai-ml-paneldiscussion-activity-7143467782867664896-O-nx?utm_source=share&utm_medium=member_desktop)
+
+- [IEEE R10 Ethics Competition](https://www.linkedin.com/posts/yeshwanth-l-m_ieeeclap2023-ethicsinaction-ieeevalues-activity-7139869080261459968-GVFb?utm_source=share&utm_medium=member_desktop)
+
+- [Moderated a Panel Discussion on "Benefits of Joining IEEE"](https://www.linkedin.com/posts/yeshwanth-l-m_ieeeconference-professionaldevelopment-ieee-activity-7139641191234469889-Qhh6?utm_source=share&utm_medium=member_desktop)
+
+- [IEEE Empowering Tech Careers Globally](https://www.linkedin.com/posts/yeshwanth-l-m_ieee-techleadership-professionalgrowth-activity-7137464873365499904-EZPy?utm_source=share&utm_medium=member_desktop)
+
+- [Expert talk on AWS Cloud Computing](https://www.linkedin.com/posts/yeshwanth-l-m_aws-cloud-ieee-activity-7127132983655890944-rwGs?utm_source=share&utm_medium=member_desktop)
+
+- [Awareness about Ethics in IEEE](https://www.linkedin.com/posts/yeshwanth-l-m_htc2023-marwadiuniversity-rajkot-activity-7121338765406584832-C9H4?utm_source=share&utm_medium=member_desktop)
+
+- [0 to 1 Cloud Masterclass](https://www.linkedin.com/posts/yeshwanth-l-m_the-ieee-r10-bangalore-section-student-summit-activity-7116661698110922752-c5Vg?utm_source=share&utm_medium=member_desktop)
+
+- [Moderated a Panel Discussion on "Benefits of Joining IEEE" - INDISCON 2023](https://www.linkedin.com/posts/yeshwanth-l-m_the-ieee-r10-bangalore-section-student-summit-activity-7116661698110922752-c5Vg?utm_source=share&utm_medium=member_desktop)
+
+- [Career Guidance to the Students of PESCE, Mandya](https://www.linkedin.com/posts/yeshwanth-l-m_gratitude-istechapter-pescollegeofengineering-activity-7065682376818913280-c10L?utm_source=share&utm_medium=member_desktop)
+
+- [Jury Member - SYMBIOT National Level 24 Hours Hackathon](https://www.linkedin.com/posts/yeshwanth-l-m_gratitude-istechapter-pescollegeofengineering-activity-7065682376818913280-c10L?utm_source=share&utm_medium=member_desktop)
+
+- [Jury for the Poster Presentation Competition - IEEE BHTC 2023](https://www.linkedin.com/posts/yeshwanth-l-m_ieee-ieeer10-ieeeindiacouncil-activity-7045776420626722816-rmVi?utm_source=share&utm_medium=member_desktop)
+
+- [Benefits of Cloud and DevOps](https://www.linkedin.com/posts/yeshwanth-l-m_techtonic-ieee-mysore-activity-7034886077660205056-30LF?utm_source=share&utm_medium=member_desktop)
+
+
