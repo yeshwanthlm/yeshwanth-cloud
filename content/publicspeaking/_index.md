@@ -9,6 +9,7 @@ Different talks/presentations I have given at Conferences
 
 - [Beyond IEEE Students](https://www.linkedin.com/posts/yeshwanth-l-m_grateful-for-the-opportunity-to-engage-with-activity-7179824329327587328-PlHO?utm_source=share&utm_medium=member_desktop)
 - [Volunteer Training Program](https://www.linkedin.com/posts/yeshwanth-l-m_ieee-volunteertraining-techcommunity-activity-7144334032569262080-stK-?utm_source=share&utm_medium=member_desktop)
+- [AWS Could/DevOps Workshop at SIT, Pune](https://www.linkedin.com/posts/yeshwanth-l-m_professionaldevelopment-ieee-education-activity-7196129852180119554-97vT?utm_source=share&utm_medium=member_desktop)
 
 ## 2023:
 - [Panel Discussion: Exploring the Evolution of AI and ML: Bridging Theory to Real-world Applications.](https://www.linkedin.com/posts/yeshwanth-l-m_ai-ml-paneldiscussion-activity-7143467782867664896-O-nx?utm_source=share&utm_medium=member_desktop)

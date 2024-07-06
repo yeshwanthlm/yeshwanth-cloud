@@ -15,6 +15,8 @@ type: list
 * Invited speaker for many Schools and College led events on Cloud Computing (AWS and Azure)
 * Trained more than 1000+ Students on Azure as a Microsoft Certified Trainer since 2020.
 * Participated as a resource person for more than 20+ events organised by IEEE Student Branches.
+* Got selected for the AWS Community Builders Program [2nd Year]
+* Got recognised as an IEEE STEM Champion!
 
 
 
