@@ -25,6 +25,8 @@ menu:
           url: ieee/
         - name: Achievements
           url: achievements/
+        - name: Contact
+          url: contact/
 
 
 params:
