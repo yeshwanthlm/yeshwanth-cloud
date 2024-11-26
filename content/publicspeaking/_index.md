@@ -7,6 +7,8 @@ Different talks/presentations I have given at Conferences
 
 ## 2024:
 
+- [IEEE R10 Ethics Competition at the IEEE Education Leadership Summit 2024](https://www.linkedin.com/feed/update/urn:li:activity:7258877429274812416/)
+- [Workshop on AWS Cloud/DevOps at the IEEE Education Leadership Summit 2024 held at Vardhaman College of Engineering, Hyderabad](https://www.linkedin.com/feed/update/urn:li:activity:7259431408782180355/)
 - [Beyond IEEE Students](https://www.linkedin.com/posts/yeshwanth-l-m_grateful-for-the-opportunity-to-engage-with-activity-7179824329327587328-PlHO?utm_source=share&utm_medium=member_desktop)
 - [Volunteer Training Program](https://www.linkedin.com/posts/yeshwanth-l-m_ieee-volunteertraining-techcommunity-activity-7144334032569262080-stK-?utm_source=share&utm_medium=member_desktop)
 - [AWS Could/DevOps Workshop at SIT, Pune](https://www.linkedin.com/posts/yeshwanth-l-m_professionaldevelopment-ieee-education-activity-7196129852180119554-97vT?utm_source=share&utm_medium=member_desktop)
