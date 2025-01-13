@@ -31,7 +31,7 @@ menu:
 
 params:
     author: Yeshwanth L M
-    description: Hi, I am Yeshwanth, a Solutions Engineer at Databricks and Cloud/DevOps enthusiast.
+    description: Hi, I am Yeshwanth, a Presales Solutions Engineer at Confluent India and Cloud/DevOps enthusiast.
 
 
     defaultTheme: auto
@@ -46,7 +46,7 @@ params:
     profileMode:
         enabled: true
         title: Yeshwanth 👋
-        description: Hi, I am Yeshwanth, a Solutions Engineer at Databricks and Cloud/DevOps Enthusiast.
+        description: Hi, I am Yeshwanth, a Presales Solutions Engineer at Confluent India and Cloud/DevOps Enthusiast.
         imageUrl: "/images/profile.jpg"
         imageTitle: Yeshwanth L M
         imageWidth: 200
