@@ -3,7 +3,7 @@ Title: About me
 type: list
 ---
 
-Yeshwanth is an accomplished Associate Platform Technical Solutions Engineer at Databricks Inc. with a strong background in Cloud Computing. Holding a degree from P E S College of Engineering, Mandya is a Microsoft Certified Trainer (MCT), co-author of **A Monk in Cloud** and AWS Community Builder, having trained over 2000+ students through engaging seminars and workshops.
+Yeshwanth is an accomplished Presales Solutions Engineer at Confluent India with a strong background in Cloud Computing. Holding a degree from P E S College of Engineering, Mandya is a Microsoft Certified Trainer (MCT), co-author of **A Monk in Cloud** and AWS Community Builder, having trained over 2000+ students through engaging seminars and workshops.
 
 Committed to professional development, Yeshwanth actively contributes to IEEE as a volunteer since 2019. He serves as a Member of the IEEE Ethics and Member Conduct Committee, showcasing his dedication to upholding ethical standards within the organization. Furthermore, Yeshwanth is the Chair-Elect of the IEEE Young Professionals Affinity Group (YP AG) Bangalore Section, demonstrating leadership and commitment to fostering the growth of young professionals in the field.
 
