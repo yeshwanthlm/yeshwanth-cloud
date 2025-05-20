@@ -5,10 +5,12 @@ type: list
 
 Roles and Responsibilities undertaken at IEEE:
 
-* Chair-Elect, IEEE Bangalore YP AG (2024-Present)
-* Member, IEEE Ethics and Member Conduct committee (2024-Present)
-* Member, Ethics and Enterprise Risk Management Committee (2023-Present)
-* Representative for AdHoc Activities, IEEE EdSoc YP AdHoc Committee (2024-Present)
+* Chair, IEEE Bangalore YP AG (2025-Present).
+* Chair, IEEE TEMS India Young Professionals (2025-Present).
+* Chair-Elect, IEEE Bangalore YP AG (2024-2025).
+* Member, IEEE Ethics and Member Conduct committee (2024-2025).
+* Member, Ethics and Enterprise Risk Management Committee (2023-2025).
+* Representative for AdHoc Activities, IEEE EdSoc YP AdHoc Committee (2024-2025).
 * IEEE Bangalore YP AG ExeCom (2022-2023).
 * Secretary, IEEE Mysore Subsection ExeCom (2023-2024).
 * IEEE Mysore Subsection ExeCom (2022-2023).
