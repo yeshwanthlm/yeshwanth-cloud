@@ -12,9 +12,8 @@ public/node_modules/
 .env.production.local
 
 # API keys and secrets
-# Temporarily allowing config.js for this commit to replace API keys with placeholders
-# **/config.js
-# !**/config.example.js
+**/config.js
+!**/config.example.js
 
 # Log files
 npm-debug.log*
