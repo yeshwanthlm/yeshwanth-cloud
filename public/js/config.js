@@ -6,7 +6,7 @@
 
 const CONFIG = {
   // YouTube API key for fetching videos
-  YOUTUBE_API_KEY: 'AIzaSyD2kkcgY4UwNRzAcvqRCzwq1eVTiEy6hqg',
+  YOUTUBE_API_KEY: 'YOUR_YOUTUBE_API_KEY',
   
   // Any other API keys or configuration values
   // OTHER_API_KEY: 'YOUR_OTHER_API_KEY',
