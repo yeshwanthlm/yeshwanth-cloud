@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Videos on Yeshwanth L M</title>
+    <link>http://localhost:1313/videos/</link>
+    <description>Recent content in Videos on Yeshwanth L M</description>
+    <generator>Hugo 0.125.1</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 03 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/videos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>YouTube Videos - A Monk in Cloud</title>
+      <link>http://localhost:1313/videos/youtube-videos/</link>
+      <pubDate>Sat, 03 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/videos/youtube-videos/</guid>
+      <description>A Monk in Cloud - YouTube Videos Below is a curated list of videos from my YouTube channel A Monk in Cloud. I regularly post content about Cloud Computing, DevOps, and related technologies.&#xA;Recent Videos Loading videos from YouTube...&#xA;To see all my videos, please visit my YouTube channel.&#xA;Note: To keep this page updated with your latest videos, you can either:&#xA;Manually update this page with new video embeds Create a custom shortcode that fetches videos from your YouTube channel using the YouTube API Use a static site generator plugin that integrates with YouTube For option 2 or 3, you would need to implement additional code to fetch and display videos dynamically.</description>
+    </item>
+  </channel>
+</rss>

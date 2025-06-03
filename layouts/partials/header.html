@@ -1,0 +1,203 @@
+{{- /* theme-toggle is enabled */}}
+{{- if (not .Site.Params.disableThemeToggle) }}
+{{- /* theme is light */}}
+{{- if (eq .Site.Params.defaultTheme "light") }}
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
+{{- /* theme is dark */}}
+{{- else if (eq .Site.Params.defaultTheme "dark") }}
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    }
+
+</script>
+{{- else }}
+{{- /* theme is auto */}}
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+{{- end }}
+{{- /* theme-toggle is disabled and theme is auto */}}
+{{- else if (and (ne .Site.Params.defaultTheme "light") (ne .Site.Params.defaultTheme "dark"))}}
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+{{- end }}
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            {{- if .Site.Title }}
+            <a href="{{ "" | absLangURL }}" accesskey="h" title="Yeshwanth L M (Alt + H)">
+                <img src="/images/Yeshwanth Logo - Black.png" alt="Yeshwanth Logo" aria-label="logo" height="160">
+            </a>
+            {{- end }}
+            <span class="logo-switches">
+                {{- if (not .Site.Params.disableThemeToggle) }}
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                {{- end }}
+
+                {{- $lang := .Lang}}
+                {{- with $.Site.Home.AllTranslations }}
+                <ul class="lang-switch">
+                    {{- range . -}}
+                    {{- if ne $lang .Lang }}
+                    <li>
+                        <a href="{{- .Permalink -}}" title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName | emojify) | default (.Lang | title) }}"
+                            aria-label="{{ .Language.LanguageName | default (.Lang | title) }}">
+                            {{- if (and $.Site.Params.displayFullLangName (.Language.LanguageName)) }}
+                            {{- .Language.LanguageName | emojify -}}
+                            {{- else }}
+                            {{- .Lang | title -}}
+                            {{- end -}}
+                        </a>
+                    </li>
+                    {{- end -}}
+                    {{- end}}
+                </ul>
+                {{- end }}
+            </span>
+        </div>
+        {{- $currentPage := . }}
+        <ul id="menu">
+            <li>
+                <a href="/" title="Home"><span>Home</span></a>
+            </li>
+            {{- range .Site.Menus.main }}
+            {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
+            {{- $page_url:= $currentPage.Permalink | absLangURL }}
+            {{- $is_search := eq ($.Site.GetPage .KeyName).Layout `search` }}
+            <li>
+                <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
+                {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
+                    <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
+                        {{- .Pre }}
+                        {{- .Name -}}
+                        {{ .Post -}}
+                    </span>
+                </a>
+            </li>
+            {{- end }}
+        </ul>
+    </nav>
+</header>
+
+<style>
+.dark .logo img {
+    content: url('/images/Yeshwanth Logo - White.png');
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    /* Removed transition to keep logo static */
+}
+
+/* Removed hover effects to keep logo static */
+.logo a:hover {
+    /* No transform or other effects */
+}
+
+.logo img {
+    margin-right: 15px;
+    /* Removed filter effects and transitions */
+}
+
+/* Removed hover effects for logo image */
+.logo a:hover img {
+    /* No transform or other effects */
+}
+
+.dark .logo img {
+    content: url('/images/Yeshwanth Logo - White.png');
+    /* Removed filter effects */
+}
+
+/* Removed hover effects for dark mode */
+.dark .logo a:hover img {
+    /* No transform or other effects */
+}
+
+/* Adjust header padding to accommodate larger logo */
+.header {
+    padding: 30px;
+}
+
+/* Make the navigation menu align better with the larger logo */
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Adjust menu positioning to align with the larger logo */
+#menu {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+/* Add a subtle animation to menu items but not the logo */
+#menu li a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#menu li a:hover {
+    transform: translateY(-2px);
+}
+
+/* Increase spacing between menu items for better readability */
+#menu li {
+    margin: 0 10px;
+}
+
+/* Make the theme toggle button more prominent */
+#theme-toggle {
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background-color: rgba(128, 128, 128, 0.2);
+}
+</style>

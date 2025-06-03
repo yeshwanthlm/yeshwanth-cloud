@@ -1,0 +1,68 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{{- if hugo.IsProduction | or (eq .Site.Params.env "production") }}
+<meta name="robots" content="index, follow">
+{{- else }}
+<meta name="robots" content="noindex, nofollow">
+{{- end }}
+
+{{- /* Title */}}
+<title>{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ .Site.Title }}</title>
+
+{{- /* Meta */}}
+{{- if .IsHome }}
+{{ with .Site.Params.keywords -}}<meta name="keywords" content="{{- range $i, $e := . }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}">{{ end }}
+{{- else }}
+<meta name="keywords" content="{{ if .Params.keywords -}}
+    {{- range $i, $e := .Params.keywords }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} {{- else }}
+    {{- range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} {{- end -}}">
+{{- end }}
+<meta name="description" content="{{- with .Description }}{{ . }}{{- else }}{{- if or .IsPage .IsSection}}
+    {{- .Summary | default (printf "%s - %s" .Title  .Site.Title) }}{{- else }}
+    {{- with .Site.Params.description }}{{ . }}{{- end }}{{- end }}{{- end -}}">
+<meta name="author" content="{{ .Site.Params.author | default .Site.Title }}">
+<link rel="canonical" href="{{ if .Params.canonicalURL -}} {{ trim .Params.canonicalURL " " }} {{- else -}} {{ .Permalink }} {{- end }}">
+
+{{- /* Styles */}}
+{{- $theme_vars := (resources.Get "css/core/theme-vars.css") }}
+{{- $reset := (resources.Get "css/core/reset.css") }}
+{{- $media := (resources.Get "css/core/zmedia.css") }}
+{{- $common := (resources.Match "css/common/*.css") | resources.Concat "assets/css/common.css" }}
+
+{{- /* include `an-old-hope` if hljs is on */}}
+{{- $isHLJSdisabled := (.Site.Params.assets.disableHLJS | default false) }}
+{{- $hljs := (cond ($isHLJSdisabled) (" " | resources.FromString "assets/css/hljs-blank.css") (resources.Get "css/hljs/an-old-hope.min.css")) }}
+
+{{- /* order is important */}}
+{{- $core := (slice $theme_vars $reset $common $hljs $media) | resources.Concat "assets/css/core.css" }}
+{{- $extended := (resources.Match "css/extended/*.css") | resources.Concat "assets/css/extended.css" }}
+
+{{- /* bundle all required css */}}
+{{- /* Add extended css after theme style */ -}}
+{{- $stylesheet := (slice $core $extended) | resources.Concat "assets/css/stylesheet.css" | minify }}
+
+{{- if not .Site.Params.assets.disableFingerprinting }}
+{{- $stylesheet := $stylesheet | fingerprint }}
+<link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" integrity="{{ $stylesheet.Data.Integrity }}" rel="preload stylesheet" as="style">
+{{- else }}
+<link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" rel="preload stylesheet" as="style">
+{{- end }}
+
+{{- /* Favicons */}}
+<link rel="icon" href="/images/favicon.png" type="image/png">
+<link rel="icon" href="/images/favicon.png" sizes="16x16" type="image/png">
+<link rel="icon" href="/images/favicon.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="mask-icon" href="/images/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+
+{{- /* Generator */}}
+{{ hugo.Generator }}
+
+{{- /* RSS */}}
+{{- with .OutputFormats.Get "rss" }}
+<link rel="alternate" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ $.Site.Title }}">
+<link rel="feed" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ $.Site.Title }}">
+{{- end -}}

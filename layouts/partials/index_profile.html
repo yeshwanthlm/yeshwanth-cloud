@@ -1,0 +1,163 @@
+<div class="profile">
+    {{- with .Site.Params.profileMode }}
+    <div class="profile_inner">
+        {{- if .imageUrl -}}
+        <div class="profile-image-container">
+            <img src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}"
+                height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" class="profile-image" />
+        </div>
+        {{- end }}
+        <h1 class="profile-title">{{ .title | default $.Site.Title | markdownify }}</h1>
+        <div class="profile-description">{{ .description | markdownify }}</div>
+        
+        <div class="social-icons-container">
+            {{- partial "social_icons.html" $.Site.Params.socialIcons -}}
+        </div>
+
+        <div class="action-buttons">
+            {{- with .buttons }}
+            {{- range . }}
+            <a class="action-button" href="{{ trim .url " " }}" rel="noopener" title="{{ .name | title }}">
+                <span class="button-inner">{{ .name | title }}</span>
+            </a>
+            {{- end }}
+            {{- end }}
+            <a class="action-button invite-button" href="/invite/" rel="noopener" title="Invite Me">
+                <span class="button-inner">Invite Me</span>
+            </a>
+        </div>
+    </div>
+    {{- end}}
+</div>
+
+<style>
+.profile {
+    padding: 30px 0;
+}
+
+.profile_inner {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-image-container {
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+}
+
+.profile-image {
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    /* Removed transition to keep image static */
+}
+
+/* Removed hover effects to keep image static */
+.profile-image:hover {
+    /* No transform or other effects */
+}
+
+.profile-title {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.profile-description {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.social-icons-container {
+    margin: 20px 0;
+}
+
+.social-icons-container svg {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons-container a:hover svg {
+    transform: translateY(-3px);
+}
+
+.action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.action-button {
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background-color: var(--primary);
+    color: var(--entry);
+    border: 2px solid var(--primary);
+}
+
+.action-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.invite-button {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+}
+
+.invite-button:hover {
+    background-color: #c0392b;
+    border-color: #c0392b;
+}
+
+/* Dark mode adjustments */
+.dark .profile-image {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Removed hover effects for dark mode */
+.dark .profile-image:hover {
+    /* No effects */
+}
+
+.dark .action-button:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .profile-title {
+        font-size: 2rem;
+    }
+    
+    .profile-description {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+        width: 80%;
+    }
+    
+    .action-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+</style>

@@ -10,9 +10,9 @@ menu:
         - name: About
           url: about/
           weight: 30
-        #- name: Blog
-        #  url: blog/
-        #  weight: 20
+        - name: Blogs
+          url: blogs/
+          weight: 20
         # - name: Categories
         #   url: categories/
         #   weight: 10
@@ -25,6 +25,8 @@ menu:
           url: ieee/
         - name: Achievements
           url: achievements/
+        - name: Invite Me
+          url: invite/
         - name: Contact
           url: contact/
 
@@ -45,7 +47,7 @@ params:
 
     profileMode:
         enabled: true
-        title: Yeshwanth 👋
+        title: Yeshwanth L M
         description: Hi, I am Yeshwanth, a Presales Solutions Engineer at Confluent India and Cloud/DevOps Enthusiast.
         imageUrl: "/images/profile.jpg"
         imageTitle: Yeshwanth L M
@@ -56,6 +58,7 @@ params:
               url: https://www.youtube.com/@amonkincloud
     mainSections:
       - articles
+      - blogs
 
     socialIcons:
         - name: github
@@ -72,7 +75,7 @@ params:
 
     # change favicon in images folder (icon for web tab)
     assets:
-          favicon: "/images/favicon.ico"
+          favicon: "/images/favicon.png"
           favicon16x16: "/images/favicon-16x16.png"
           favicon32x32: "/images/favicon-32x32.png"
           apple_touch_icon: "/images/apple-touch-icon.png"

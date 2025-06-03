@@ -1,0 +1,201 @@
+{{- define "main" }}
+
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">
+    {{ .Description | markdownify }}
+  </div>
+  {{- end }}
+</header>
+
+{{- if .Content }}
+<div class="post-content">
+{{ .Content }}
+</div>
+{{- end }}
+
+<div class="invite-container">
+  <form id="invite-form" class="invite-form" action="https://formsubmit.co/contact@yeshwanthlm.in" method="POST">
+    <div class="form-group">
+      <label for="name">Your Name *</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="email">Your Email *</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="phone">Your Phone Number (include country code)</label>
+      <input type="tel" id="phone" name="phone" placeholder="+1 234 567 8900">
+    </div>
+    
+    <div class="form-group">
+      <label for="event-name">Event Name *</label>
+      <input type="text" id="event-name" name="event-name" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="event-date">Event Date *</label>
+      <input type="date" id="event-date" name="event-date" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="event-time">Event Time *</label>
+      <input type="time" id="event-time" name="event-time" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="event-location">Event Location *</label>
+      <input type="text" id="event-location" name="event-location" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="event-type">Event Type *</label>
+      <select id="event-type" name="event-type" required>
+        <option value="">Select Event Type</option>
+        <option value="Conference">Conference</option>
+        <option value="Meetup">Meetup</option>
+        <option value="Workshop">Workshop</option>
+        <option value="Webinar">Webinar</option>
+        <option value="Panel Discussion">Panel Discussion</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label for="audience-size">Expected Audience Size *</label>
+      <input type="number" id="audience-size" name="audience-size" min="1" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="topic">Preferred Topic *</label>
+      <input type="text" id="topic" name="topic" required>
+    </div>
+    
+    <div class="form-group full-width">
+      <label for="message">Additional Information</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+    </div>
+    
+    <!-- Hidden fields for FormSubmit configuration -->
+    <input type="hidden" name="_subject" value="New Speaking Invitation Request">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://yeshwanthlm.in/invite/thanks">
+    
+    <div class="form-group full-width">
+      <button type="submit" class="submit-button">Send Invitation</button>
+    </div>
+  </form>
+</div>
+
+<style>
+  .invite-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--entry);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .invite-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .form-group {
+    flex: 0 0 calc(50% - 10px);
+    margin-bottom: 15px;
+  }
+  
+  .full-width {
+    flex: 0 0 100%;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--primary);
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: var(--entry);
+    color: var(--primary);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input:focus, select:focus, textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+    outline: none;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  .submit-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  
+  .submit-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Dark mode adjustments */
+  .dark .invite-container {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .dark input, .dark select, .dark textarea {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+  }
+  
+  .dark input:focus, .dark select:focus, .dark textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.3);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .form-group {
+      flex: 0 0 100%;
+    }
+    
+    .invite-container {
+      padding: 15px;
+    }
+    
+    .submit-button {
+      width: 100%;
+    }
+  }
+</style>
+
+{{- end }}{{- /* end main */ -}}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gcp on Yeshwanth L M</title>
+    <link>http://localhost:1313/tags/gcp/</link>
+    <description>Recent content in Gcp on Yeshwanth L M</description>
+    <generator>Hugo 0.125.1</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 14 Mar 2023 08:13:57 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/gcp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Top 10 AWS Services You Should Know!</title>
+      <link>http://localhost:1313/blogs/top-10-aws-services/</link>
+      <pubDate>Tue, 14 Mar 2023 08:13:57 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/top-10-aws-services/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

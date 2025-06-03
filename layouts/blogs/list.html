@@ -1,0 +1,93 @@
+{{- define "main" }}
+
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">
+    {{ .Description | markdownify }}
+  </div>
+  {{- end }}
+</header>
+
+{{- if .Content }}
+<div class="post-content">
+{{ .Content }}
+</div>
+{{- end }}
+
+<div class="blog-grid">
+  {{- range .RegularPages }}
+    <div class="blog-card">
+      <a href="{{ .Params.canonical_url }}" target="_blank" rel="noopener noreferrer">
+        <div class="blog-image">
+          <img src="{{ .Params.cover_image }}" alt="{{ .Title }}">
+        </div>
+        <div class="blog-content">
+          <h2>{{ .Title }}</h2>
+          <p class="blog-date">{{ .Date.Format "January 2, 2006" }}</p>
+        </div>
+      </a>
+    </div>
+  {{- end }}
+</div>
+
+<style>
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .blog-card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  }
+  
+  .blog-card a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .blog-image {
+    height: 180px;
+    overflow: hidden;
+  }
+  
+  .blog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .blog-card:hover .blog-image img {
+    transform: scale(1.05);
+  }
+  
+  .blog-content {
+    padding: 1.5rem;
+  }
+  
+  .blog-content h2 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .blog-date {
+    font-size: 0.875rem;
+    color: #666;
+    margin: 0;
+  }
+</style>
+
+{{- end }}{{- /* end main */ -}}
