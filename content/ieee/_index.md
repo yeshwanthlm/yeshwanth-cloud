@@ -21,6 +21,6 @@ Roles and Responsibilities undertaken at IEEE:
 * Design Volunteer for IEEE YP Bangalore Section 2020-2021.
 * IEEE Bangalore Section SAC Volunteer 2020-2022.
 * Volunteer for IEEE Bangalore Section Student Coordination Team 2020-21.
-* Student Outreach Ambassador for IEEE TEMS from 2020 – 2021.
+* Student Outreach Ambassador for IEEE TEMS from 2020 – 2022.
 
 
