@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Invite Me on Yeshwanth L M</title>
-    <link>http://localhost:1313/invite/</link>
+    <link>https://yeshwanthlm.in/invite/</link>
     <description>Recent content in Invite Me on Yeshwanth L M</description>
     <generator>Hugo 0.125.1</generator>
     <language>en</language>
     <lastBuildDate>Tue, 03 Jun 2025 13:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/invite/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yeshwanthlm.in/invite/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Thank You!</title>
-      <link>http://localhost:1313/invite/thanks/</link>
+      <link>https://yeshwanthlm.in/invite/thanks/</link>
       <pubDate>Tue, 03 Jun 2025 13:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/invite/thanks/</guid>
+      <guid>https://yeshwanthlm.in/invite/thanks/</guid>
       <description>Thank You for Your Invitation! I&amp;rsquo;ve received your speaking invitation request and will review it soon. I typically respond within 2-3 business days.&#xA;If you need to reach me urgently, please feel free to contact me directly at contact@yeshwanthlm.in.&#xA;← Return to Home</description>
     </item>
   </channel>

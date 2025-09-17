@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cloud on Yeshwanth L M</title>
-    <link>http://localhost:1313/tags/cloud/</link>
+    <link>https://yeshwanthlm.in/tags/cloud/</link>
     <description>Recent content in Cloud on Yeshwanth L M</description>
     <generator>Hugo 0.125.1</generator>
     <language>en</language>
     <lastBuildDate>Thu, 22 May 2025 13:59:11 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yeshwanthlm.in/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Simplifying Multi-Region EC2 Management with AWS EC2 Instance Manager</title>
-      <link>http://localhost:1313/blogs/simplifying-multi-region-ec2-management/</link>
+      <link>https://yeshwanthlm.in/blogs/simplifying-multi-region-ec2-management/</link>
       <pubDate>Thu, 22 May 2025 13:59:11 +0000</pubDate>
-      <guid>http://localhost:1313/blogs/simplifying-multi-region-ec2-management/</guid>
+      <guid>https://yeshwanthlm.in/blogs/simplifying-multi-region-ec2-management/</guid>
       <description></description>
     </item>
     <item>
       <title>Top 10 AWS Services You Should Know!</title>
-      <link>http://localhost:1313/blogs/top-10-aws-services/</link>
+      <link>https://yeshwanthlm.in/blogs/top-10-aws-services/</link>
       <pubDate>Tue, 14 Mar 2023 08:13:57 +0000</pubDate>
-      <guid>http://localhost:1313/blogs/top-10-aws-services/</guid>
+      <guid>https://yeshwanthlm.in/blogs/top-10-aws-services/</guid>
       <description></description>
     </item>
   </channel>

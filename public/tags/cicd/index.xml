@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cicd on Yeshwanth L M</title>
-    <link>http://localhost:1313/tags/cicd/</link>
+    <link>https://yeshwanthlm.in/tags/cicd/</link>
     <description>Recent content in Cicd on Yeshwanth L M</description>
     <generator>Hugo 0.125.1</generator>
     <language>en</language>
     <lastBuildDate>Sat, 03 Jun 2023 09:36:53 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/cicd/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yeshwanthlm.in/tags/cicd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Host Your Resume on AWS EC2 with a CI/CD Setup Using GitHub Actions</title>
-      <link>http://localhost:1313/blogs/host-resume-on-aws-ec2-with-cicd/</link>
+      <link>https://yeshwanthlm.in/blogs/host-resume-on-aws-ec2-with-cicd/</link>
       <pubDate>Sat, 03 Jun 2023 09:36:53 +0000</pubDate>
-      <guid>http://localhost:1313/blogs/host-resume-on-aws-ec2-with-cicd/</guid>
+      <guid>https://yeshwanthlm.in/blogs/host-resume-on-aws-ec2-with-cicd/</guid>
       <description></description>
     </item>
   </channel>

@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About me on Yeshwanth L M</title>
-    <link>http://localhost:1313/about/</link>
+    <link>https://yeshwanthlm.in/about/</link>
     <description>Recent content in About me on Yeshwanth L M</description>
     <generator>Hugo 0.125.1</generator>
     <language>en</language>
-    <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yeshwanthlm.in/about/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

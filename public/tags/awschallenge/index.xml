@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Awschallenge on Yeshwanth L M</title>
-    <link>http://localhost:1313/tags/awschallenge/</link>
+    <link>https://yeshwanthlm.in/tags/awschallenge/</link>
     <description>Recent content in Awschallenge on Yeshwanth L M</description>
     <generator>Hugo 0.125.1</generator>
     <language>en</language>
     <lastBuildDate>Wed, 21 May 2025 15:36:34 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/awschallenge/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yeshwanthlm.in/tags/awschallenge/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building a Tech Logo Memory Match Game with Pygame</title>
-      <link>http://localhost:1313/blogs/building-tech-logo-memory-match-game/</link>
+      <link>https://yeshwanthlm.in/blogs/building-tech-logo-memory-match-game/</link>
       <pubDate>Wed, 21 May 2025 15:36:34 +0000</pubDate>
-      <guid>http://localhost:1313/blogs/building-tech-logo-memory-match-game/</guid>
+      <guid>https://yeshwanthlm.in/blogs/building-tech-logo-memory-match-game/</guid>
       <description></description>
     </item>
   </channel>
